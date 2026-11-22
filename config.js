@@ -1,0 +1,5 @@
+window.ATIVA_CONFIG = {
+  SUPABASE_URL: "https://ishvstmmoqiuekeowwrq.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlzaHZzdG1tb3FpdWVrZW93d3JxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ3MTA0NTEsImV4cCI6MjExMDI4NjQ1MX0.6qNxhef9sh_9ywnGj9086nT3zXK3TJ2M-V9aKyrCSQE"
+};
+

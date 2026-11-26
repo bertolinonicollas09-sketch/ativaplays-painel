@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instalar AtivaPlays</title>
+<meta name="description" content="Passo a passo para instalar o AtivaPlays no seu aparelho.">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="icon" href="mascot.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0D0D0D; --surface: #18181B; --surface-2: #1F1F23; --text: #F9FAFB; --text-2: #A1A1AA;
+    --line: rgba(255,255,255,.09); --a1: #F97316; --a2: #EF4444; --ok: #34D399; --wa: #25D366; --warn: #FBBF24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
+  a { color: inherit; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px 64px; }
+  header { text-align: center; padding: 40px 0 24px; background: radial-gradient(ellipse at 50% 0%, rgba(249,115,22,.16), transparent 65%); }
+  header img { width: 76px; }
+  .word { font-weight: 800; font-size: 30px; letter-spacing: -.02em; margin-top: 6px; }
+  .word b { background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  header p { color: var(--text-2); margin-top: 6px; }
+  h2 { font-size: 15px; color: var(--text-2); text-transform: uppercase; letter-spacing: .08em; margin: 28px 4px 12px; }
+  details { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; margin-bottom: 12px; overflow: hidden; }
+  details[open] { border-color: rgba(249,115,22,.5); }
+  summary { list-style: none; cursor: pointer; padding: 16px 18px; display: flex; align-items: center; gap: 14px; }
+  summary::-webkit-details-marker { display: none; }
+  .ico { width: 44px; height: 44px; flex: none; border-radius: 12px; background: rgba(249,115,22,.14); display: flex; align-items: center; justify-content: center; font-size: 22px; }
+  .st { flex: 1; min-width: 0; }
+  .st b { display: block; font-size: 16px; }
+  .st small { display: block; color: var(--text-2); font-size: 13px; margin-top: 2px; }
+  .chev { color: var(--text-2); transition: transform .2s; }
+  details[open] .chev { transform: rotate(90deg); }
+  .body { padding: 0 18px 18px; border-top: 1px solid var(--line); }
+  ol { margin: 14px 0 0 0; padding-left: 22px; }
+  li { margin: 10px 0; }
+  li::marker { color: var(--a1); font-weight: 800; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 0 20px; border-radius: 12px; font-weight: 700; text-decoration: none; margin-top: 12px; border: 0; font: inherit; font-weight: 700; cursor: pointer; }
+  .btn.main { background: linear-gradient(90deg, var(--a1), var(--a2)); color: #fff; width: 100%; }
+  .btn.wa { background: var(--wa); color: #06210F; width: 100%; }
+  .btn.ghost { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); }
+  .url { margin-top: 8px; display: flex; gap: 8px; align-items: stretch; }
+  .url code { flex: 1; min-width: 0; padding: 12px; border-radius: 10px; background: var(--bg); border: 1px dashed rgba(249,115,22,.6); font: 600 14px/1.4 ui-monospace, Consolas, monospace; word-break: break-all; }
+  .url .btn { margin: 0; min-height: auto; padding: 0 14px; }
+  .note { margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: rgba(251,191,36,.08); border: 1px solid rgba(251,191,36,.3); color: #FDE68A; font-size: 14px; }
+  .note.ok { background: rgba(52,211,153,.08); border-color: rgba(52,211,153,.3); color: #A7F3D0; }
+  .muted { color: var(--text-2); }
+  .soon .ico { background: rgba(255,255,255,.06); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+  .card h3 { font-size: 17px; }
+  .card p { color: var(--text-2); margin-top: 6px; }
+  .steps3 { display: grid; gap: 10px; margin-top: 12px; }
+  .s3 { display: flex; gap: 12px; align-items: flex-start; }
+  .s3 i { font-style: normal; width: 28px; height: 28px; flex: none; border-radius: 50%; background: linear-gradient(135deg, var(--a1), var(--a2)); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+  footer { text-align: center; color: var(--text-2); font-size: 13px; margin-top: 36px; }
+  .copied { color: var(--ok) !important; }
+</style>
+</head>
+<body>
+<header>
+  <img src="mascot.svg" alt="">
+  <div class="word">Ativa<b>Plays</b></div>
+  <p>Escolha o seu aparelho e siga o passo a passo.</p>
+</header>
+
+<main class="wrap">
+
+  <h2>Escolha o aparelho</h2>
+
+  <!-- ANDROID CELULAR / TABLET -->
+  <details>
+    <summary><span class="ico">📱</span><span class="st"><b>Celular ou tablet Android</b><small>Samsung, Motorola, Xiaomi, etc.</small></span><span class="chev">›</span></summary>
+    <div class="body">
+      <a class="btn main" href="../tv.apk" download>⬇ Baixar o AtivaPlays (Android)</a>
+      <ol>
+        <li>Toque no botão acima. O celular baixa o arquivo <b>tv.apk</b>.</li>
+        <li>Quando terminar, toque em <b>Abrir</b> (ou abra a pasta <b>Downloads</b> e toque no arquivo).</li>
+        <li>Se aparecer <b>“Por segurança, seu telefone não permite instalar apps desta fonte”</b>, toque em <b>Configurações</b> e ative <b>Permitir desta fonte</b>. Volte.</li>
+        <li>Toque em <b>Instalar</b>. Se o Google Play Protect avisar, toque em <b>Instalar mesmo assim</b>.</li>
+        <li>Abra o AtivaPlays e siga <b>Depois de instalar</b>, lá embaixo.</li>
+      </ol>
+    </div>
+  </details>
+
+  <!-- ANDROID TV / GOOGLE TV -->
+  <details>
+    <summary><span class="ico">📺</span><span class="st"><b>TV com Android TV ou Google TV</b><small>TCL, Philco, Sony, Xiaomi, Positivo, AOC, Philips, TV Box, Chromecast com Google TV</small></span><span class="chev">›</span></summary>
+    <div class="body">
+      <ol>
+        <li>Na TV, abra a <b>Play Store</b> (Google Play), procure <b>Downloader</b> e instale. É o app de ícone <b>laranja</b>.</li>
+        <li>Abra o <b>Downloader</b>. Se pedir acesso a arquivos, toque em <b>Permitir</b>.</li>
+        <li>No campo de endereço, digite com o controle:
+          <div class="url"><code id="u-tv">bertolinonicollas09-sketch.github.io/ativaplays-painel/tv.apk</code><button class="btn ghost" data-copy="u-tv">Copiar</button></div>
+          e aperte <b>Go</b>.</li>
+        <li>Se a TV disser que <b>não permite instalar apps desta fonte</b>, toque em <b>Configurações</b>, ative para o <b>Downloader</b> e volte.</li>
+        <li>Toque em <b>Instalar</b> e depois em <b>Abrir</b>.</li>
+        <li>O AtivaPlays fica na tela inicial da TV, em <b>Apps</b>. Siga <b>Depois de instalar</b>, lá embaixo.</li>
+      </ol>
+      <div class="note ok">Use as setas do controle para andar, <b>OK</b> para abrir e <b>Voltar</b> para sair. No player, <b>OK</b> abre as opções e a escolha de qualidade.</div>
+    </div>
+  </details>
+
+  <!-- FIRE TV -->
+  <details>
+    <summary><span class="ico">🔥</span><span class="st"><b>Fire TV Stick (Amazon)</b><small>Fire TV Stick, Fire TV Stick 4K, Fire TV Cube</small></span><span class="chev">›</span></summary>
+    <div class="body">
+      <ol>
+        <li>Na tela inicial, vá em <b>Buscar</b> (lupa), digite <b>Downloader</b> e instale.</li>
+        <li>Vá em <b>Configurações</b> → <b>Minha Fire TV</b> → <b>Opções do desenvolvedor</b> → <b>Instalar apps desconhecidos</b> → ative para o <b>Downloader</b>.
+          <br><span class="muted">Se não aparecer “Opções do desenvolvedor”: vá em Minha Fire TV → <b>Sobre</b> e aperte <b>OK 7 vezes</b> em cima do nome do aparelho. Volte uma tela e a opção aparece.</span></li>
+        <li>Abra o <b>Downloader</b>, digite o endereço:
+          <div class="url"><code id="u-fire">bertolinonicollas09-sketch.github.io/ativaplays-painel/tv.apk</code><button class="btn ghost" data-copy="u-fire">Copiar</button></div>
+          e aperte <b>Go</b>.</li>
+        <li>Toque em <b>Instalar</b> e depois em <b>Abrir</b>.</li>
+        <li>Siga <b>Depois de instalar</b>, lá embaixo.</li>
+      </ol>
+    </div>
+  </details>
+
+  <!-- WINDOWS -->
+  <details>
+    <summary><span class="ico">💻</span><span class="st"><b>Computador Windows</b><small>Windows 10 ou 11</small></span><span class="chev">›</span></summary>
+    <div class="body">
+      <a class="btn main" href="../pc.zip" download>⬇ Baixar o AtivaPlays (Windows)</a>
+      <ol>
+        <li>Clique no botão acima e espere baixar o arquivo <b>pc.zip</b>.</li>
+        <li>Clique com o botão direito no arquivo → <b>Extrair tudo</b> → <b>Extrair</b>.</li>
+        <li>Abra a pasta <b>AtivaPlays-Windows</b> e dê dois cliques em <b>ativaplays.exe</b>.</li>
+        <li>Se aparecer <b>“O Windows protegeu o computador”</b>, clique em <b>Mais informações</b> → <b>Executar assim mesmo</b>.</li>
+        <li>Dica: clique com o botão direito no <b>ativaplays.exe</b> → <b>Enviar para</b> → <b>Área de trabalho (criar atalho)</b>.</li>
+      </ol>
+      <div class="note">Não tire o <b>ativaplays.exe</b> de dentro da pasta: ele precisa dos outros arquivos ao lado.</div>
+    </div>
+  </details>
+
+  <!-- SAMSUNG / LG -->
+  <details class="soon">
+    <summary><span class="ico">🖥️</span><span class="st"><b>TV Samsung ou LG</b><small>Smart TVs Tizen (Samsung) e webOS (LG)</small></span><span class="chev">›</span></summary>
+    <div class="body">
+      <p style="margin-top:14px">O app para <b>Samsung</b> e <b>LG</b> está pronto, mas essas TVs só aceitam apps da <b>loja oficial</b> delas. Enquanto o AtivaPlays não chega nas lojas, a instalação é feita <b>com a ajuda do suporte</b>.</p>
+      <a class="btn wa" href="https://wa.me/5511985108317?text=Ol%C3%A1!%20Quero%20instalar%20o%20AtivaPlays%20na%20minha%20TV%20Samsung%2FLG." target="_blank" rel="noopener">💬 Falar com o suporte</a>
+      <div class="note ok">Tem um <b>TV Box</b>, <b>Fire TV Stick</b> ou <b>Chromecast com Google TV</b>? Ligue na TV Samsung/LG e use o passo a passo deles: funciona na hora.</div>
+    </div>
+  </details>
+
+  <!-- APPLE / ROKU -->
+  <details class="soon">
+    <summary><span class="ico">🍎</span><span class="st"><b>iPhone, iPad, Apple TV, Mac ou Roku</b><small>Ainda não disponível</small></span><span class="chev">›</span></summary>
+    <div class="body">
+      <p style="margin-top:14px">O AtivaPlays ainda não está disponível para aparelhos <b>Apple</b> e <b>Roku</b>.</p>
+      <div class="note ok">Alternativa: um <b>Fire TV Stick</b>, <b>Chromecast com Google TV</b> ou <b>TV Box Android</b> ligado na TV resolve: siga o passo a passo deles acima.</div>
+    </div>
+  </details>
+
+  <h2>Depois de instalar</h2>
+  <div class="card">
+    <h3>Ative o seu aparelho</h3>
+    <p>Na primeira vez, o app mostra dois códigos. Eles identificam o seu aparelho.</p>
+    <div class="steps3">
+      <div class="s3"><i>1</i><div>Abra o AtivaPlays. Aparecem o <b>MAC Address</b> e a <b>Device Key</b>.</div></div>
+      <div class="s3"><i>2</i><div><b>Tire uma foto da tela</b> e envie para quem vendeu o seu acesso (ou para o suporte).</div></div>
+      <div class="s3"><i>3</i><div>Quando liberarem, aperte <b>“Já ativei, continuar”</b>. Pronto!</div></div>
+    </div>
+    <a class="btn wa" href="https://wa.me/5511985108317?text=Ol%C3%A1!%20Instalei%20o%20AtivaPlays%20e%20quero%20ativar.%20Vou%20mandar%20a%20foto%20dos%20c%C3%B3digos." target="_blank" rel="noopener">💬 Enviar pelo WhatsApp</a>
+  </div>
+
+  <h2>Precisa de ajuda?</h2>
+  <div class="card">
+    <h3>Suporte AtivaPlays</h3>
+    <p>Ativações, recarga e qualquer problema: <b>WhatsApp +55 11 98510-8317</b>.</p>
+    <a class="btn wa" href="https://wa.me/5511985108317?text=Ol%C3%A1!%20Preciso%20de%20ajuda%20para%20instalar%20o%20AtivaPlays." target="_blank" rel="noopener">💬 Chamar no WhatsApp</a>
+  </div>
+
+  <footer>AtivaPlays · player de listas. O app não traz conteúdo: você usa a lista cadastrada para o seu aparelho.</footer>
+</main>
+
+<script>
+  // Botão "Copiar" do endereço; abre só um aparelho por vez.
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function (e) {
+      e.preventDefault();
+      var t = document.getElementById(b.getAttribute('data-copy')).textContent;
+      var done = function () { b.textContent = 'Copiado!'; b.classList.add('copied'); setTimeout(function () { b.textContent = 'Copiar'; b.classList.remove('copied'); }, 1800); };
+      if (navigator.clipboard) { navigator.clipboard.writeText(t).then(done, function () {}); }
+    });
+  });
+  document.querySelectorAll('details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) { return; }
+      document.querySelectorAll('details').forEach(function (o) { if (o !== d) { o.open = false; } });
+    });
+  });
+</script>
+</body>
+</html>
